@@ -1,0 +1,123 @@
+.projects-section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #a7bdc5;
+}
+
+.section-title {
+    color: #d4f1fa;
+    font-size: 28px;
+    margin-bottom: 60px;
+    border-left: 4px solid #3bceff;
+    padding-left: 10px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 150px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.project-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-overline {
+    font-size: 14px;
+    color: #3bceff;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.project-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #a7bdc5;
+}
+
+.project-tech-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #3bceff;
+}
+
+.project-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #a4aeaf;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: #3bceff;
+}
+
+.project-image-wrapper {
+    flex: 1;
+    max-width: 400px;
+}
+
+.project-image {
+    width: 100%;
+    border: 2px solid #3bceff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(59, 206, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    filter: grayscale(1) contrast(1.1) brightness(1);
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(59, 206, 255, 0.3);
+    filter: none;
+}
+/* === Optional image-left layout === */
+.project.image-left {
+    flex-direction: row-reverse; /* This flips the image to the left */
+}
+
+/* === Mobile responsiveness === */
+@media (max-width: 768px) {
+    .project,
+    .project.image-left {
+        flex-direction: column;
+    }
+
+    .project-image-wrapper,
+    .project-text {
+        max-width: 100%;
+    }
+}
+
+.project-video {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #3bceff;
+    box-shadow: 0 0 20px rgba(59, 206, 255, 0.2);
+}
+
+.project-image-wrapper.active .project-image {
+    display: none;
+}
+
+.project-image-wrapper.active .project-video {
+    display: block;
+}
+#projects {
+    margin-top: 50px;
+}

@@ -1,0 +1,104 @@
+/* 🔄 RESET STYLES */
+/* Removes default margin and padding from all elements and sets a consistent box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🎨 BODY STYLING */
+/* Sets the main font for the site, line height for readability, background and text color */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;                 /* Spacing between lines of text */
+    background-color: #0a192f;        /* Dark navy background */
+    color: #3bceff;                   /* Bright cyan text color */
+}
+
+/* 🔝 HEADER SECTION */
+/* Styles the top navigation/header area */
+header {
+    display: flex;                    /* Flex layout to align logo and nav horizontally */
+    justify-content: space-between;  /* Space between logo (left) and nav (right) */
+    align-items: center;             /* Vertically center the items */
+    padding: 20px 40px;              /* Space inside header: top/bottom 20px, left/right 40px */
+    background-color: #0a192f;       /* Matches body background */
+    position: sticky;                /* Keeps header stuck to top on scroll */
+    top: 0;                          /* Sticks to the very top */
+    z-index: 100;                    /* Places header above other content when overlapping */
+}
+
+/* 🧩 LOGO STYLING */
+/* Styles your name/logo */
+.logo {
+    font-size: 24px;                 /* Makes logo text bigger */
+    font-weight: bold;
+    height: 60px;
+    object-fit: contain;
+    color: #3bceff;
+    transition: filter 0.4s ease;          
+}
+
+/* Hover effect – adjust hue, brightness */
+.logo img:hover {
+    filter: hue-rotate(40deg) brightness(1.5) saturate(1);
+}
+
+/* 🔗 NAVIGATION MENU STYLING */
+/* The <ul> that holds your nav links */
+.nav-links {
+    list-style: none;               /* Removes default bullet points */
+    display: flex;                  /* Makes list items sit in a row */
+    gap: 20px;                      /* Adds spacing between links */
+}
+
+/* ✨ NAVIGATION LINKS */
+/* Styles each <a> inside nav-links */
+.nav-links a {
+    font-family: 'Courier New', Courier, monospace; 
+    text-decoration: none;         /* Removes underline */
+    color: #a4aeaf;                /* Soft blue-gray color for links */
+    font-weight: 200;              /* Medium font weight */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth animations on hover */
+}
+
+/* 🎯 HOVER EFFECT ON LINKS */
+/* When the user hovers over a nav link */
+.nav-links a:hover {
+    color: #3bceff;                /* Changes color to bright cyan */
+    transform: translateY(-2px);   /* Slight upward shift for a dynamic feel */
+}
+
+/* 📱 RESPONSIVE STYLING FOR SMALL SCREENS */
+/* Activates when the screen is smaller than 768px (e.g. phones, small tablets) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;       /* Stack logo and nav vertically */
+        align-items: flex-start;      /* Align items to the left instead of center */
+    }
+
+    .nav-links {
+        flex-direction: column;       /* Stack nav links vertically */
+        gap: 10px;                    /* Reduce space between stacked links */
+        margin-top: 10px;             /* Add a little space above the nav */
+    }
+}
+
+
+/* 💥 Flicker/Glitch Animation */
+.glitch {
+    animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }

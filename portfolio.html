@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson G.</title>
+    <!-- Link logo to webside title -->
+    <link rel="icon" type="image/png" href="portofoliologo4.png">
+    <!-- Link css file for nav-->
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Link css file for social left bar-->
+    <link rel="stylesheet" href="left.css">
+    <!-- Link css file for intro section-->
+    <link rel="stylesheet" href="intro.css">
+    <!-- Link css file for about me section-->
+    <link rel="stylesheet" href="about.css">
+    <!-- LInk css file for projects section-->
+    <link rel="stylesheet" href="projects.css">
+    <!-- Link css file for skills section-->
+    <link rel="stylesheet" href="skills.css">
+    <!-- Link css file for contact section-->
+    <link rel="stylesheet" href="contact.css">
+    <!-- Link css file for footer section-->
+    <link rel="stylesheet" href="footer.css">
+    <!-- Google Font: Noto Sans JP for nav font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Header, Logo + Nav-->
+    <header>
+        <div class="logo">
+            <img class="glitch" src="portofoliologo4.png" alt="Crow and A logo" width="60">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about"> About me </a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#skills"> Skills </a></li>
+                <li><a href="#contact"> Contact </a></li>
+                <li><a href="#resume"> Resume </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Socials Left Bar-->
+    <div class="socials-left">
+        <ul>
+            <li><a href="https://github.com/nolongerfizz" target="_blank">
+                <img src="githublogo.png" alt="Githublogo">
+            </a></li>
+            <li><a href="https://www.instagram.com/danjiiroo/" target="_blank">
+                <img src="instagramlogo.png" alt="Instagramlogo">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/anderson-david-gutierrez-perez-64662735a/" target="_blank">
+                <img src="linkedinlogo.png" alt="LinkedInlogo">
+            </a></li>
+        </ul>
+    </div>
+
+    <!--ASCII Crow Right Bar -->
+    <div class="ascii-right">
+        <pre>
+             ,_,         
+            (O,O)        
+            (   )        
+            " " "   
+        </pre>
+    </div>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Sections go here: About Me, Projects, etc -->
+        <!-- Intro section--> 
+        <section id="intro" class="intro-section">
+
+            <h1>~$ whoami</h1>
+            <h2> I'm Anderson Gutierrez</h2>
+            <p>
+                I'm a software developer with a focus on building clean, accessible, and purposeful digital experiences — blending logic, design, and just a hint of mischief. 
+                I love solving real-world problems through thoughtful code and creating interfaces that feel as intuitive as they are expressive. 
+                Curious to dig deeper? Here's a bit more <a href="#about" class="about-link">about me</a>.
+            </p>
+
+        </section>
+
+        <!-- About me -->
+        <section id="about" class="about-section">
+            <h1>~$ About me </h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        My journey into tech began the day my father brought home our first computer. 
+                        What started as curiosity quickly became an obsession — 
+                        I spent hours exploring the internet, breaking things (in the good way), and trying to understand how it all worked. 
+                        Shows like <em>Mr. Robot</em> didn't help — they just pushed me deeper down the rabbit hole.
+                    </p>
+                    
+                    <p>
+                        I taught myself how to code by digging through online resources, building small projects, and messing up (a lot).
+                        Eventually, I enrolled in <strong>CS50x</strong>, Harvard's Introduction to Computer Science, to strengthen my foundation. 
+                        Now, I'm sharpening my skills even further in a <strong>Full Stack Java Developer Bootcamp</strong> at Generation.
+                    </p>
+                    
+                </div>
+        
+                <div class="about-image-wrapper">
+                    <img src="aboutme.jpg" alt="Anderson Gutierrez" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">~$ Projects I've built</h2>
+
+            <div class="project">
+                <div class="project-image-wrapper">
+                    <img src="finance2.png" alt="Screenshot of Terminal Portfolio" class="project-image">
+                    <video class="project-video" src="project1video.mp4" muted controls></video>
+                </div>
+
+                <div class="project-text">
+                    <p class="project-overline"> 2024 | Course project</p>
+                    <h3 class="project-title">C$50 Finance</h3>
+                    <div class="project-description">
+                        <p>
+                            I implemented a website via which users can “buy” and “sell” stocks.
+                        </p>
+                    </div>
+                    <ul class="project-tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>SQL</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/nolongerfizz" target="_blank">GitHub</a>
+                        <a href="#" class="live-demo"> ▷ Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second project -->
+            <div class="project image-left">
+                <div class="project-image-wrapper">
+                    <img src="homepage.png" alt="Screenshot of homepage" class="project-image">
+                    <video class="project-video" src="project2.mp4" muted controls></video>
+                </div>
+
+                <div class="project-text">
+                    <p class="project-overline">2024 | Course project</p>
+                    <h3 class="project-title">NMKS Music Displayer</h3>
+                    <div class="project-description">
+                        <p>
+                            I implemented a website for NMKS music company via which users can explore and listen to songs from
+                            <a href="https://www.youtube.com/@nmks_records" target="_blank" class="about-link">NMKS Records</a>.
+                        </p>
+                    </div>
+                    <ul class="project-tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/nolongerfizz" target="_blank">GitHub</a>
+                        <a href="#" class="live-demo"> ▷ Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Skills section-->
+            <section id="skills" class="skills-section">
+                <h2 class="section-title">~$ Skills</h2>
+            
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="skill-title">HTML</h3>
+                        <div class="skill-image">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML logo">
+                        </div>
+                        <div class="skill-description">
+                            <p>Front-end Markup Language</p>
+                        </div>
+                    </div>
+            
+                    <div class="skill-card">
+                        <h3 class="skill-title">CSS</h3>
+                        <div class="skill-image">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS logo">
+                        </div>
+                        <div class="skill-description">
+                            <p>Front-end Styling Tool</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-title">Javascript</h3>
+                        <div class="skill-image">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript logo">
+                        </div>
+                        <div class="skill-description">
+                            <p>Front-end Programming Language</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-title">Python</h3>
+                        <div class="skill-image">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo">
+                        </div>
+                        <div class="skill-description">
+                            <p>Back-end Programming Language</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-title">SQL</h3>
+                        <div class="skill-image">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite logo">
+                        </div>
+                        <div class="skill-description">
+                            <p>Database Management Tool</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-title">Flask</h3>
+                        <div class="skill-image">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask logo">
+                        </div>
+                        <div class="skill-description">
+                            <p>Back-end Web Framework</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Let's get in contact</h2>
+            <p></p>
+            <a class="email-link" href="mailto:david2021perez@outlook.es" rel="noopener noreferrer" target="_blank"> 
+                ➤ Send me an email
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Anderson Gutierrez.</p>
+    </footer>
+
+</body>
+<!-- Script for videos -->
+<script>
+    document.querySelectorAll('.live-demo').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const wrapper = this.closest('.project').querySelector('.project-image-wrapper');
+            const video = wrapper.querySelector('video');
+            
+            wrapper.classList.add('active');
+            video.currentTime = 0;
+            video.play();
+
+            video.onended = () => {
+                wrapper.classList.remove('active');
+            };
+        });
+    });
+</script>
+</html>
